@@ -21,7 +21,7 @@ prediction = Classifier1.predict(X)
 
 #accuracy for Decision Tree Classifier
 acc = accuracy_score(Y,prediction)
-print(acc)
+print("Accuracy for Decision Tree : {}".format(acc))
 
 
 Classifier2 = MLPClassifier()
@@ -32,7 +32,7 @@ prediction = Classifier2.predict(X)
 
 #accuracy for MLP
 acc = accuracy_score(Y,prediction)
-print(acc)
+print("Accuracy for MLP : {}".format(acc))
 
 Classifier3 = KNeighborsClassifier(n_neighbors=3)
 
@@ -42,7 +42,7 @@ prediction = Classifier3.predict(X)
 
 #accuracy for KNN
 acc = accuracy_score(Y,prediction)
-print(acc)
+print("Accuracy for KNN : {}".format(acc))
 
 Classifier4 = AdaBoostClassifier(tree.DecisionTreeClassifier(max_depth=1))
 
@@ -52,7 +52,7 @@ prediction = Classifier4.predict(X)
 
 #accuracy for Adaboost
 acc = accuracy_score(Y,prediction)
-print(acc)
+print("Accuracy for Adaboost : {}".format(acc))
 
 
 
